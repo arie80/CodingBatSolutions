@@ -133,3 +133,17 @@ public String theEnd(String str, boolean front) {
     if (!front) return str.substring(str.length() - 1);
     return str.substring(0,1);
 }
+
+/*
+withoutEnd2
+Given a string, return a version without both the first and last char of the string.
+The string may be any length, including 0.
+*/
+
+public String withouEnd2(String str) {
+    String result = "";
+    if (str.length() > 1) {
+        result =  str.substring(1, str.length() - 1);
+    }
+    return result;
+}
