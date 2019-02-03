@@ -336,3 +336,37 @@ public int[] make2(int[] a, int[] b) {
     }
   return res;
 }
+
+/*
+front11
+Given 2 int arrays, a and b, of any length, return a new array with the first element of each array.
+If either array is length 0, ignore that array.
+*/
+
+public int[] front11(int[] a, int[] b) {
+    int a1 = 0;
+    int b1 = 0;
+
+    if (a.length != 0) {
+        a1 = 1;
+    }
+    if (b.length != 0) {
+        b1 = 1;
+    }
+
+    int[] arr = new int[a1 + b1];
+    if (a.length == 0 && b.length == 0) {
+        return arr;
+    }
+    if (a.length ==  0) {
+        arr[0] = b[0];
+    }
+    if (b.length == 0) {
+        arr[0] = a[0];
+    }
+    if (a.length >= 1 && b.length >= 1) {
+        arr[0] = a[0];
+        arr[1] = b[0];
+    }
+    return arr;
+}
