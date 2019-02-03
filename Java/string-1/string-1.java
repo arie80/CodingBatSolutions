@@ -69,3 +69,13 @@ Given a string of even length, return the first half. So the string "WooHoo" yie
 public String firstHalf(String str) {
     return str.substring(0, str.length() / 2);
 }
+
+/*
+withoutEnd
+Given a string, return a version without the first and last char, so "Hello" yields "ell".
+The string length will be at least 2.
+*/
+
+public String withoutEnd(String str) {
+    return str.substring(1, str.length() - 1);
+}
