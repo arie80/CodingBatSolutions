@@ -347,10 +347,10 @@ public int[] front11(int[] a, int[] b) {
     int a1 = 0;
     int b1 = 0;
 
-    if (a.length != 0) {
+    if (a.length > 0) {
         a1 = 1;
     }
-    if (b.length != 0) {
+    if (b.length > 0) {
         b1 = 1;
     }
 
