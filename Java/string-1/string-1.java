@@ -243,3 +243,18 @@ public String lastChars(String a, String b) {
     if (b.length() == 0) b = "@";
     return a.substring(0, 1) + b.substring(b.length() -1);
 }
+
+/*
+conCat
+Given two strings, append them together (known as "concatenation") and return the result. However,
+if the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat".
+*/
+
+public String conCat(String a, String b) {
+    String front = a.length() > 0 ? a.substring(a.length() -1) : a;
+    String back = b.length() > 0 ? b.substring(0, 1) : b;
+    if (front.equals(back)) {
+        return a.substring(0, a.length() -1) + b;
+    }
+    return a + b;
+}
