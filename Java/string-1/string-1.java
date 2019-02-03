@@ -194,3 +194,15 @@ public String twoChar(String str, int index) {
     }
     return str.substring(index, index + 2);
 }
+
+/*
+middleThree
+Given a string of odd length, return the string length 3 from its middle, so "Candy" yields "and".
+The string length will be at least 3.
+*/
+
+public String middleThree(String str) {
+    String a = str.substring(0, str.length() / 2);
+    String b = str.substring(str.length() / 2);
+    return a.substring(a.length() - 1) + b.substring(0, 2);
+}
