@@ -26,3 +26,13 @@ Given tag and word strings, create the HTML string with tags around the word, e.
 public String makeTags(String tag, String word) {
     return "<" + tag + ">" + word + "</" + tag + ">";
 }
+
+/*
+makeOutWord
+Given an "out" string length 4, such as "<<>>", and a word, return a new string where the word is in the middle of the out string,
+e.g. "<<word>>". Note: use str.substring(i, j) to extract the String starting at index i and going up to but not including index j.
+*/
+
+public String makeOutWord(String out, String word) {
+    return out.substring(0, 2) + word + out.substring(out.length() -2, out.length());
+}
