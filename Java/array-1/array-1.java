@@ -262,3 +262,21 @@ public int[] midThree(int[] nums) {
     arr[2] = nums[mid + 1];
     return arr;
 }
+
+/*
+maxTriple
+Given an array of ints of odd length, look at the first, last, and middle values in the array and return the largest.
+The array length will be a least 1.
+*/
+
+public int maxTriple(int[] nums) {
+    int[] arr = new int[3];
+    arr[0] = nums[0];
+    arr[1] = nums[(nums.length) / 2];
+    arr[2] = nums[nums.length - 1];
+    int max = arr[0];
+    if (max < arr[1]) {
+        max = arr[1];
+    }
+    return Math.max(max, arr[2]);
+}
