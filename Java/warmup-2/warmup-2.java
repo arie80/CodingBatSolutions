@@ -39,3 +39,20 @@ int countXX(String str) {
     }
     return count;
 }
+
+/*
+doubleX
+Given a string, return true if the first instance of "x" in the string is immediately followed by another "x".
+*/
+
+boolean doubleX(String str) {
+    int isX = str.indexOf('x');
+    if (isX == -1) return false;
+    if (isX + 1 >= str.length()) return false;
+    return str.substring(isX + 1, isX + 2).equals("x");
+
+    /* another approach
+    String x = str.substring(isX);
+    return x.startsWith("xx");
+    */
+}
