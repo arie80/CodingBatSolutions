@@ -220,3 +220,17 @@ public int[] makeMiddle(int[] nums) {
     int[] mid = {nums[divide - 1], nums[divide]};
     return mid;
 }
+
+/*
+plusTwo
+Given 2 int arrays, each length 2, return a new array length 4 containing all their elements.
+*/
+
+public int[] plusTwo(int[] a, int[] b) {
+    int[] arr = new int[4];
+    arr[0] = a[0];
+    arr[1] = a[1];
+    arr[2] = b[0];
+    arr[3] = b[1];
+    return arr;
+}
