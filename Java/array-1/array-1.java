@@ -119,3 +119,12 @@ public int[] makeEnds(int[] nums) {
     int[] arr = { nums[0], nums[nums.length - 1] };
     return arr;
 }
+
+/*
+has23
+Given an int array length 2, return true if it contains a 2 or a 3.
+*/
+
+public boolean has23(int[] nums) {
+    return (nums[0] == 2 || nums[1] == 2) || (nums[0] == 3 || nums[1] == 3);
+}
