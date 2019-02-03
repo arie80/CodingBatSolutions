@@ -337,3 +337,21 @@ public String without2(String str) {
     }
     return str;
 }
+
+/*
+deFront
+Given a string, return a version without the first 2 chars.
+Except keep the first char if it is 'a' and keep the second char if it is 'b'. The string may be any length. Harder than it looks.
+*/
+
+public String deFront(String str) {
+    String a = "";
+    String b = "";
+    if (str.substring(0, 1).equals("a")) {
+        a = str.substring(0, 1);
+    }
+    if (str.substring(1, 2).equals("b")) {
+        b = str.substring(1, 2);
+    }
+    return a + b + str.substring(2);
+}
