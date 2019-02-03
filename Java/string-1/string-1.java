@@ -272,3 +272,15 @@ public String lastTwo(String str) {
     String last2 = last.substring(1);
     return str.substring(0, str.length() - 2) + last2 + last1;
 }
+
+/*
+seeColor
+Given a string, if the string begins with "red" or "blue" return that color string, otherwise return the empty string.
+*/
+
+public String seeColor(String str) {
+    String result = "";
+    if (str.length() >= 3 && str.substring(0, 3).equals("red")) result = "red";
+    if (str.length() >= 4 && str.substring(0, 4).equals("blue")) result = "blue";
+    return result;
+}
