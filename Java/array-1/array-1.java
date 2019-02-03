@@ -160,3 +160,37 @@ public boolean double23(int[] nums) {
     if (nums.length <= 1) return false;
     return (nums[0] == 2 && nums[1] == 2) || (nums[0] == 3 && nums[1] == 3);
 }
+
+/*
+fix23
+Given an int array length 3, if there is a 2 in the array immediately followed by a 3, set the 3 element to 0.
+Return the changed array.
+*/
+
+public int[] fix23(int[] nums) {
+    if (nums[0] == 2 && nums[1] == 3) {
+        nums[1] = 0;
+    }
+    if (nums[1] == 2 && nums[2] == 3) {
+        nums[2] = 0;
+    }
+    int[] res = {nums[0], nums[1], nums[2]};
+    return res;
+}
+
+/*
+start1
+Start with 2 int arrays, a and b, of any length. Return how many of the arrays have 1 as their first element.
+*/
+
+public int start1(int[] a, int[] b) {
+    int countA = 0;
+    int countB = 0;
+    for (int i = 0; i < a.length; i++) {
+        if(a[i] == 1) countA++;
+    }
+    for (int x = 0; x < b.length; x++) {
+        if ( b[x] == 1) countB++;
+    }
+    return countA + countB;
+}
