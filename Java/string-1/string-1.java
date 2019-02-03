@@ -160,3 +160,13 @@ public String middleTwo(String str) {
     String b = str.substring(split, str.length());
     return a.substring(a.length() - 1) + b.substring(0, 1);
 }
+
+/*
+endsLy
+Given a string, return true if it ends in "ly".
+*/
+
+public boolean endsLy(String str) {
+    if (str.length() <= 1) return false;
+    return (str.substring(str.length() - 2).equals("ly"));
+}
