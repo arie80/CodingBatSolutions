@@ -63,9 +63,6 @@ public int caughtSpeeding(int speed, boolean isBirthday) {
     if (isBirthday) {
         limit = 5;
     }
-    if (speed < (60 + limit)) {
-        result = 0;
-    }
     if (speed > (60 + limit)  && speed <= (80 + limit)) {
         result = 1;
     }
